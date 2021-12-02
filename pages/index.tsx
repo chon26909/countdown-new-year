@@ -25,6 +25,9 @@ const Home: NextPage = () => {
       const h = Math.floor((difference % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
       setHours(h);
 
+      const m = Math.floor((difference % (1000 * 60 * 60 )) / (1000 * 60));
+      setMinutes(m);
+
     },1000)
   
     return () => clearInterval(intervel);
