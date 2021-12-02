@@ -12,10 +12,16 @@ const Home: NextPage = () => {
   const [seconds, setSeconds] = useState();
 
   useEffect(() => {
+
+    const target = new Date("12/31/2022 23:59:59")
+
+    const intervel = setInterval(() => {
+      const now = new Date();
+      const difference = target.getTime() - now.getTime();
+      
+    },1000)
   
-    return () => {
-  
-    }
+    return () => clearInterval(intervel);
   }, [])
 
   return (
