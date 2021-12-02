@@ -13,13 +13,13 @@ const Home: NextPage = () => {
 
   useEffect(() => {
 
-    const target = new Date("12/31/2022 23:59:59")
+    const target = new Date("12/31/2021 23:59:59")
 
     const intervel = setInterval(() => {
       const now = new Date();
       const difference = target.getTime() - now.getTime();
 
-      const d = Math.floor(difference / (100 * 60 * 60 * 24))
+      const d = Math.floor(difference / (1000 * 60 * 60 * 24))
       setDays(d);
 
       const h = Math.floor((difference % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
@@ -44,7 +44,19 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="timer-warpper">
-        Hello
+        Happy New Year
+      </div>
+      <div>
+        {days}
+      </div>
+      <div>
+        {hours}
+      </div>
+      <div>
+        {minutes}
+      </div>
+      <div>
+        {seconds}
       </div>
     
     </div>
