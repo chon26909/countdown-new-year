@@ -11,12 +11,12 @@ const Home: NextPage = () => {
   const [minutes, setMinutes] = useState();
   const [seconds, setSeconds] = useState();
 
-  // useEffect(() => {
+  useEffect(() => {
   
-  //   return () => {
-  //     cleanup
-  //   }
-  // }, [])
+    return () => {
+  
+    }
+  }, [])
 
   return (
     <div className={styles.container}>
