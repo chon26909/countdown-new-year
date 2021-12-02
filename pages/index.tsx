@@ -18,6 +18,10 @@ const Home: NextPage = () => {
     const intervel = setInterval(() => {
       const now = new Date();
       const difference = target.getTime() - now.getTime();
+
+      const d = Math.floor(difference / (100 * 60 * 60 * 24))
+      setDays(d);
+
       
     },1000)
   
