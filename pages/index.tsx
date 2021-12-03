@@ -44,11 +44,11 @@ const Home: NextPage = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
-      {/* <div>
+      <div>
         <h1 className={styles.title}>
           สวัสดีปีใหม่
         </h1>
-      </div> */}
+      </div>
       <div className={styles.timer}>
         <div className={styles.digit}>
           <div className={styles.counter}>
